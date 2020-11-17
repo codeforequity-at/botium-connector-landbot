@@ -83,7 +83,7 @@ There is a small demo in [samples](./samples) with Botium Bindings. It uses real
 * Setup your Landbot API chatbot in [Landbot app](https://app.landbot.io/). Create a new Landbot API chatbot.
 Modify the basic template according to this screen:
 
-![Real example](https://github.com/codeforequity-at/botium-connector-landbot.git/samples/real/real-example.png?raw=true)
+![Real example](https://github.com/codeforequity-at/botium-connector-landbot/blob/master/samples/real/real-example.png?raw=true)
   
 * Install the dependencies and botium-core as peerDependency:
     ```
