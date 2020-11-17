@@ -1,0 +1,17 @@
+test
+
+#me
+Start
+
+#bot
+Hi there, I'm Botium!
+
+#bot
+MEDIA https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif
+BUTTONS Hi
+
+#me
+BUTTON $0|Hi
+
+#bot
+What can I help you?

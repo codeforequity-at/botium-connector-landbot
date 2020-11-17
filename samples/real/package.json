@@ -1,0 +1,22 @@
+{
+  "name": "landbot-real-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "test-debug": "DEBUG=botium-connector* mocha spec",
+    "test": "mocha spec",
+    "inbound": "botium-cli inbound-proxy --verbose"
+  },
+  "botium": {
+    "convodirs": [
+      "spec/convo"
+    ],
+    "expandConvos": true,
+    "expandUtterancesToConvos": false
+  },
+  "devDependencies": {
+    "botium-bindings": "latest",
+    "botium-cli": "latest",
+    "botium-connector-landbot": "../../",
+    "mocha": "latest"
+  }
+}

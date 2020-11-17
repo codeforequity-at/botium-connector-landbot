@@ -1,0 +1,10 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "Botium Project Landbot",
+      "CONTAINERMODE": "landbot",
+      "LANDBOT_TOKEN": "AAAAAAAA111111111",
+      "SIMPLEREST_INBOUND_REDISURL": "redis://127.0.0.1:6379"
+    }
+  }
+}
