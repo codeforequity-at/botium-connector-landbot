@@ -105,3 +105,6 @@ dist
 
 # IDE
 .idea/
+
+botium.local.json
+package-lock.json

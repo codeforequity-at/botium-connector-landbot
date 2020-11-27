@@ -115,3 +115,16 @@ Set the capability __CONTAINERMODE__ to __landbot__ to activate this connector.
 
 ### LANDBOT_TOKEN
 Landbot channel `AUTH TOKEN` field
+
+### LANDBOT_API_TOKEN
+This capability is need only if nlp data has to be processed as well e.g. for using it with [botium-coach](https://www.botium.ai/coach/). 
+In this case you can find your API token under you landbot app account.
+
+_Info: You need have a [dialogflow integration](https://help.landbot.io/article/j6n7arejz4-integrations-dialogflow-block) in you Landbot API chatbot,
+and in dialogflow configuration the Query Response has to be set._
+
+### LANDBOT_QUERY_RESULT
+The value of this capability is `query_result` by default. 
+The same value has to be set here as in the Query Response field in your dialogflow integration.
+
+_If you don't set LANDBOT_API_TOKEN, this capability is ignored._ 
