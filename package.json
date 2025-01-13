@@ -1,13 +1,14 @@
 {
   "name": "botium-connector-landbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Botium Connector for Landbot",
   "main": "dist/botium-connector-landbot-cjs.js",
   "module": "dist/botium-connector-landbot-es.js",
   "scripts": {
     "build": "npm run eslint && rollup -c",
     "eslint": "eslint index.js",
-    "eslint-fix": "eslint --fix index.js"
+    "eslint-fix": "eslint --fix index.js",
+    "test": "echo 'Not implemented yet'"
   },
   "author": "Botium GmbH",
   "license": "MIT",
