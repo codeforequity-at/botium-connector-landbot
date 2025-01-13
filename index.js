@@ -2,7 +2,6 @@ const util = require('util')
 const mime = require('mime-types')
 const _ = require('lodash')
 const randomize = require('randomatic')
-const request = require('request-promise-native')
 const debug = require('debug')('botium-connector-landbot')
 
 const SimpleRestContainer = require('botium-core/src/containers/plugins/SimpleRestContainer')
@@ -104,7 +103,15 @@ class BotiumConnectorLandbot {
                     'Content-Type': 'application/json'
                   }
                 }
-                const data = JSON.parse(await request(requestOptions))
+                const response = await fetch(requestOptions.url, {
+                  method: requestOptions.method,
+                  headers: requestOptions.headers
+                })
+                if (!response.ok) {
+                  const errorDetails = await response.text()
+                  throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorDetails}`)
+                }
+                const data = response.json()
                 const queryResult = data.field.value
                 botMsg.nlp = {
                   intent: this._extractIntent(queryResult),
